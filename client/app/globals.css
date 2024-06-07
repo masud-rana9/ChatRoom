@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .appBtn {
+    @apply bg-primary text-white select-none text-sm 2xl:text-base rounded lg:rounded-md 2xl:rounded-lg font-medium w-full lg:w-fit text-center px-6 2xl:px-10 py-1.5 2xl:py-2 hover:bg-primary/90 border border-primary disabled:bg-slate-600 disabled:border-gray-600 disabled:opacity-70;
+  }
+  .roundedBtn {
+    @apply bg-textDarkGrey hover:bg-black/90 text-sm md:text-base text-white py-1 md:py-2 2xl:py-2.5 px-3 lg:px-6 rounded-full;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.float-label-input:focus-within label,
+.float-label-input input:not(:placeholder-shown) + label {
+  transform: translateY(-1.5rem) scale(0.75) translateX(-0.5rem);
+  background-color: white;
+  color: #3458dc;
+}
